@@ -1,0 +1,302 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  height: 550px;
+  top: 77px;
+  left: 180px;
+  gap: 0px;
+  opacity: 0px;
+  border: 2px solid #fff;
+  padding: 20px;
+  background-color: white;
+}
+
+.container:hover {
+  width: 400px;
+  height: 560px;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  color: #31bd9c;
+}
+
+.offer {
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.offer.most-popular {
+  border-color: #31bd9c;
+  position: relative;
+}
+
+.offer.last-offer {
+  border-radius: 12px;
+}
+.offerr {
+  padding: 15px;
+  margin-top: -23px;
+  width: 69px;
+  height: 72px;
+  left: -21px;
+}
+
+.tag {
+  font-weight: bold;
+}
+
+.price {
+  /*float: right;*/
+  font-weight: bold;
+}
+
+.label {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #31bd9c;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.discount {
+  color: red;
+  font-size: 12px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 12px;
+}
+
+.details {
+  margin-top: 10px;
+  margin-right: 150px;
+}
+.detailsof {
+  margin-top: 10px;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 10px;
+  background-color: #31bd9c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: right;
+  margin-top: 10px;
+  color: grey;
+  font-size: 15px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.align {
+  margin-left: 19px;
+  margin-right: 10px;
+}
+
+.aligns {
+  margin-left: 80px;
+  font-size: 15px;
+}
+
+.alignc {
+  color: #31bd9c;
+  font-size: 15px;
+    font-weight: bold;
+
+
+}
+.offer-container {
+  display: flex;
+  align-items: center;
+  /* background-color: #fff; */
+  /* border-radius: 15px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  max-width: 350px;
+  margin-top: -6px;
+  margin-left: -7px;
+}
+
+.badge {
+  background-color: #31bd9c;
+  color: white;
+  padding: 24px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: relative;
+}
+
+.badge:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent transparent #31bd9c;
+}
+.card:hover .badge {
+  padding: 6px;
+  width: 85px;
+  height: 48px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+.details1 {
+  padding: 13px 15px 15px 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+}
+
+.offer-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.offer-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.strike  {
+  font-size: 12px;
+  margin-left:25px;
+  
+}
+
+.most-popular {
+  color: #31bd9c;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 17px;
+  right: 23px;
+}
+
+.offer {
+
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  right: 15px;
+}
+.offeres {
+
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 26px;
+  right: 15px;
+}
+
+.radio-button {
+	width: 14px;
+	height: 14px;
+	border: 2px solid #31bd9c;
+	border-radius: 50%;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 20px;
+}
+
+.radio-button.checked::after {
+	content: "";
+	width: 5px;
+	height: 5px;
+	background-color: #31bd9c;
+	border-radius: 55%;
+}
+.offers {
+  margin-left: -147px;
+}
+.offersof {
+  margin-left: -7px;
+}
+.select-container {
+  width: 65.98px;
+  height: 25.31px;
+  top: 346.05px;
+  left: 105.23px;
+  gap: 0px;
+  border-radius: 1.81px 0px 0px 0px;
+  border: 0.9px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.card {
+  border: 2px solid #31bd9c;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  margin-top: 20px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+  height: 71px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  height: 200px;
+}
+.card.expanded {
+  height: 200px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transition: none;
+}
+ .straight-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.straight-line::before,
+.straight-line::after {
+  content: '';
+  flex: 1;
+  border-top: 2px solid #000; /* Solid line */
+  margin: 0 10px;
+}
+
+.card.open {
+  height: 200px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}

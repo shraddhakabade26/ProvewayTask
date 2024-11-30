@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+	<style>
+
+
+
+	</style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="box">
+	  
+	  <div class="straight-line">
+        <div class="header"> Bundle & Save  </div>
+		</div>
+		  <div class="card open" id="card1">
+        <div class="">
+          <div class="offer-container mt-5">
+           
+            <div class="details1">
+              <span class="radio-button"></span>
+              <div class="offer-title"> 1 Pair</div>
+              <div class="offer-price">DKK 195.00 </div>
+			  <div class="offeres">50% OFF</div>
+
+            </div>
+          </div>
+          <span class="align offers "> Color </span>
+          <span class="align"> Size </span>
+          <div class="details">
+            <label for="number">#1</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+          <div class="details">
+            <label for="number">#2</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+        </div>
+		</div>
+		  <div class="card " id="card2">
+        <div class="">
+          <div class="offer-container mt-5">
+            
+            <div class="details1">
+              <span class="radio-button"></span>
+              <div class="most-popular">Most Popular</div>
+			   <div class="offer">40% OFF</div>
+              <div class="offer-title">2 Pair</div>
+              <div class="offer-price">DKK 345.00 <del class ="strike">DKK 195.00</del>
+			  </div>
+            </div>
+          </div>
+            <span class="align offers "> Color </span>
+          <span class="align"> Size </span>
+          <div class="details">
+            <label for="number">#1</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+          <div class="details">
+            <label for="number">#2</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+        </div>
+		</div>
+		 <div class="card " id="card3">
+        <div class="">
+          <div class="offer-container mt-5">
+            <div class="details1">
+              <span class="radio-button"></span>
+			  <div class="offeres">60% OFF</div>
+              <div class="offer-title">3 Pair
+              </div>
+              <div class="offer-price">DKK 528.00
+              </div>
+            </div>
+          </div>
+          <span class="align offers "> Color </span>
+          <span class="align"> Size </span>
+          <div class="details">
+            <label for="number">#1</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+          <div class="details">
+            <label for="number">#2</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+        </div>
+		</div>
+        <br>
+        <div class="">
+          <label for="number"></label>
+          <span class="alignc"> Free 2 Day Shipping </span>
+          <span class="aligns"> Total : <b>DKK 360.00</b></span>
+        </div>
+        <button class="add-to-cart"> + Add to Cart</button>
+        <div class="footer mt-5"> &#169 Powered by Pumper </div>
+      </div>
+    </div>
+	
+  <script>
+     window.onload = function () {
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach((card) => {
+    const radioButton = card.querySelector(".radio-button");
+
+    card.addEventListener("mouseenter", () => {
+      cards.forEach((c) => {
+        c.classList.remove("open");
+        c.querySelector(".radio-button").classList.remove("checked");
+      });
+
+      card.classList.add("open");
+      radioButton.classList.add("checked");
+    });
+
+    
+  });
+};
+
+    </script>
+  </body>
+</html>
